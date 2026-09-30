@@ -1,31 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My Technical Blog</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on My Technical Blog</description>
+    <title>Server on My Technical Blog</title>
+    <link>http://localhost:1313/tags/server/</link>
+    <description>Recent content in Server on My Technical Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 22:20:06 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Another Post</title>
-      <link>http://localhost:1313/posts/second/</link>
-      <pubDate>Tue, 29 Sep 2026 22:20:06 -0600</pubDate>
-      <guid>http://localhost:1313/posts/second/</guid>
-      <description>&lt;p&gt;This is another post that I wrote&lt;/p&gt;
-&lt;p&gt;dfgfdgfd&lt;/p&gt;
-&lt;p&gt;fdg
-fd
-gfd
-g
-fd&lt;/p&gt;
-&lt;p&gt;erretretret
-re
-er
-tre
-tre&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Tue, 29 Sep 2026 21:35:44 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/server/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>nginx round robin</title>
       <link>http://localhost:1313/posts/first/</link>
@@ -40,13 +22,6 @@ tre&lt;/p&gt;</description>
 &lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python3 -m http.server 8002
 &lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python3 -m http.server 8003
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I am going to set up the nginx config at &lt;code&gt;/etc/nginx/conf.d/demo.conf&lt;/code&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;Hi! My name is Muhammad Ali and I am a software engineer.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

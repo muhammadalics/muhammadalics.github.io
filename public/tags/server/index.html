@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Tags | My Technical Blog</title>
+<title>Server | My Technical Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="This is some description under title">
 <meta name="author" content="Muhammad Ali">
-<link rel="canonical" href="http://localhost:1313/tags/">
+<link rel="canonical" href="http://localhost:1313/tags/server/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +18,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/index.xml" title="rss">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/server/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/server/">
 <noscript>
     <style>
         #theme-toggle,
@@ -113,25 +113,49 @@
             </li>
             <li>
                 <a href="http://localhost:1313/tags/" title="Tags">
-                    <span class="active">Tags</span>
+                    <span>Tags</span>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
-<main class="main">
-<header class="page-header">
-    <h1>Tags</h1>
+<main class="main"> 
+<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/tags/">Tags</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+  <h1>
+    Server
+  </h1>
 </header>
 
-<ul class="terms-tags">
-            <li>
-                <a href="http://localhost:1313/tags/nginx/">Nginx <sup><strong><sup>1</sup></strong></sup> </a>
-            </li>
-            <li>
-                <a href="http://localhost:1313/tags/server/">Server <sup><strong><sup>1</sup></strong></sup> </a>
-            </li>
-</ul>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">nginx round robin
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is my first post.
+This is a demo of round robin.
+For this demo, I am going to create three http servers locally on Ubuntu. I will then put nginx, reverse proxy in front of the servers and we will see how nginx routes the traffic.
+Let me fire up my terminal multiplexer.
+We have four sessions here. I will run three servers in three separate panes
+python3 -m http.server 8001 python3 -m http.server 8002 python3 -m http.server 8003 I am going to set up the nginx config at /etc/nginx/conf.d/demo.conf
+...</p>
+  </div>
+  <footer class="entry-footer">
+
+<span title='2026-09-29 21:35:44 -0600 MDT'>September 29, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>Muhammad Ali</span></footer>
+  <a class="entry-link" aria-label="post link to nginx round robin" href="http://localhost:1313/posts/first/"></a>
+</article>
     </main>
     
 <footer class="footer">

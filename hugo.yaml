@@ -1,4 +1,36 @@
 baseURL: https://example.org/
 locale: en-us
-title: My New Hugo Project
+title: My Technical Blog
 theme: ["PaperMod"]
+taxonomies:
+  tag: tags
+
+params:
+  # profileMode:
+  #   enabled: true
+  title: 'This is title'
+  description: 'This is some description under title'
+  author: 'Muhammad Ali'
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 10
+    - identifier: about
+      name: About Me
+      url: /about/
+      weight: 10
