@@ -25,7 +25,7 @@ python3 -m http.server 8002
 ```
 python3 -m http.server 8003
 ```
-{{< figure src="/images/round-robin-00.png" alt="tmux" >}}
+{{< figure src="./images/round-robin-00.png" alt="tmux" >}}
 
 
 I am now going to set up the nginx config at `/etc/nginx/conf.d/demo.conf`
@@ -63,7 +63,7 @@ done
 ```
 
 
-{{< video src="/videos/round-robin.webm" >}}
+{{< video src="./videos/round-robin.webm" >}}
 
 Notice in the above video how the requests intially got routed to a different server in a cyclic manner each time. At around 0:20 mark we terminated one of the servers (the one on port 8002) to simulate a downed server. When this happened, the reverse proxy kept routing to the other two servers.
 
