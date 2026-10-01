@@ -1,6 +1,6 @@
 baseURL: https://example.org/
 locale: en-us
-title: My Technical Blog
+title: Ali's Engineering Notes
 theme: ["PaperMod"]
 taxonomies:
   tag: tags
