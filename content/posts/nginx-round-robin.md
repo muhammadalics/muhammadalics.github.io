@@ -25,8 +25,7 @@ python3 -m http.server 8002
 ```
 python3 -m http.server 8003
 ```
-
-![Local graphic](/images/round-robin-00.png)
+{{< figure src="/images/round-robin-00.png" alt="tmux" >}}
 
 
 I am now going to set up the nginx config at `/etc/nginx/conf.d/demo.conf`
