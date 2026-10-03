@@ -2,7 +2,7 @@
 date: '2026-09-29T21:35:44-06:00'
 draft: false
 title: 'Round Robin with nginx'
-tags: ["nginx", "server"]
+tags: ["nginx", "server", "round robin"]
 categories: ["system design"]
 videos:
     - videos/round-robin.webm
@@ -14,22 +14,22 @@ I am going to create three http servers locally on Ubuntu. I will then put nginx
 
 Lets fire up a terminal multiplexer. We will have four sessions here. I will run three servers in three separate panes
 
-```
+```bash
 python3 -m http.server 8001
 ```
 
-```
+```bash
 python3 -m http.server 8002
 ```
 
-```
+```bash
 python3 -m http.server 8003
 ```
 {{< figure src="/images/round-robin-00.png" alt="tmux" >}}
 
 
 I am now going to set up the nginx config at `/etc/nginx/conf.d/demo.conf`
-```
+```bash
 upstream demo {
     server 127.0.0.1:8001;  # App 1
     server 127.0.0.1:8002;  # App 2
@@ -54,7 +54,7 @@ systemctl start service nginx
 Lets hit the nginx endpoint.
 
 Notice that we want to hit the localhost with a delay of one second after each request to see how round robin works.
-```
+```bash
 for i in {1..100}; do
   curl -s -o /dev/null -w "Request $i: HTTP %{http_code}\n" http://localhost
   sleep 1
