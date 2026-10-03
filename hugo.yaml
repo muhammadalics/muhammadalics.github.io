@@ -4,6 +4,7 @@ title: Ali's Engineering Notes
 theme: ["PaperMod"]
 taxonomies:
   tag: tags
+  categories: categories
 
 params:
   # profileMode:
