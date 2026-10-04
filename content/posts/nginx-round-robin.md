@@ -69,5 +69,5 @@ Notice in the above video how the requests intially got routed to a different se
 
 We then started the server again around 0:32.
 
-Notice how the reverse proxy resumed sending the requests to the server listening on port 8002.
+Notice how the reverse proxy resumed sending the requests to the server listening on port 8002 once it found the server healthy again.
 
