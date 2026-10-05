@@ -2,14 +2,37 @@
 date: '2026-10-04T11:45:13-06:00'
 draft: false
 title: 'Nginx Rate Limiting in Action'
+mermaid: true
 ---
-
 
 Rate limiting an API is required for several reasons.
 
 A single service serves calls from many clients. We want to make sure that the calls from clients are served fairly and one client doesn't consume all the app resources. Too many requests in a short period of time can overwhelm the service by consuming too much CPU or memory. Another reason why we might want to limit a client is when they used up all their allocated credits.
 
 Someone could mount a brute force attack on the service by making a large number of calls in a short period of time. Having a rate limit can mitigate such attacks, with some caveats, that we will discuss below.
+
+Without rate limiting, the reverse proxy will route the request to the app.
+```mermaid
+sequenceDiagram
+    participant Client
+    participant ReverseProxy as Reverse Proxy
+    participant App
+
+    Client->>ReverseProxy: HTTP Request
+    ReverseProxy->>App: Forward Request
+    App->>ReverseProxy: 200 OK
+    ReverseProxy->>Client: 200 OK
+```
+With rate limiting, if the rate limit has been exceeded by the client, the reverse proxy will block the requests.
+```mermaid
+sequenceDiagram
+    participant Client
+    participant ReverseProxy as Reverse Proxy
+    participant App
+
+    Client->>ReverseProxy: HTTP Request
+    ReverseProxy->>Client: Too many requests
+```
 
 We can demo rate limit by creating a service using python that will listen on port 8001. We are going to put a nginx reverse proxy infront of the service and add rate limit directive. Lets start with the nginx config. This is the config that we are going to use.
 
