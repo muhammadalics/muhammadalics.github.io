@@ -3,6 +3,7 @@ date: '2026-10-04T11:45:13-06:00'
 draft: false
 title: 'Nginx Rate Limiting in Action'
 mermaid: true
+tags: ["nginx", "server", "rate limit"]
 ---
 
 Rate limiting an API is required for several reasons.

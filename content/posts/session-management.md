@@ -3,6 +3,7 @@ date: '2026-10-07T20:30:31-06:00'
 draft: false
 title: 'Build a Session-Backed Shopping Cart with Redis and Node.js'
 mermaid: true
+tags: ["session management", "redis", "cart"]
 ---
 
 In this post, I will discuss session management with Redis in a rudimentary way.

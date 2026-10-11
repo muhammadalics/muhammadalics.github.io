@@ -3,6 +3,7 @@ date: '2026-10-06T18:39:57-06:00'
 draft: false
 title: 'Server-Side Caching Explained: Cache Hit, Miss, and Expiry'
 mermaid: true
+tags: ["nginx", "server", "cache"]
 ---
 
 Server side caching can be implemented via reverse proxy such as nginx. Caching allows the traffic to be served faster and also reduces the load on the app. In this post, I am going to demonstrate the server-side caching using a server and an nginx reverse proxy running locally.
